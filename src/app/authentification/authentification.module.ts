@@ -16,6 +16,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'register',
         component: RegisterComponent
+      },
+      {
+        path: '',
+        component: LoginComponent
       }
 
     ])

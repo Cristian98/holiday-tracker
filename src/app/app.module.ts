@@ -1,18 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AuthentificationModule } from './authentification/authentification.module'
+import { AuthentificationModule } from './authentification/authentification.module';
+import { HomeModule } from './home/home.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthentificationModule
+    AuthentificationModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

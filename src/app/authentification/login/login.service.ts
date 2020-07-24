@@ -13,8 +13,10 @@ export class LoginService {
   public checkUser(name: string, password: string){
       if(this.user.name == name && this.user.password == password){
         console.log("Succes");
+        alert("Buna, " + name);
       } else {
         console.log("Failed")
+        alert("Wrong credentials");
       }
   }
 }

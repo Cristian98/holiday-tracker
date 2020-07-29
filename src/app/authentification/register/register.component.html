@@ -1,12 +1,26 @@
-  <div class="login-page">
-    <div class="form">
-      <form class="login-form" (submit)="registerUser($event)">
-        <input type="name" placeholder="name"/>
-        <input type="password" placeholder="password"/>
-        <input type="email" placeholder="email address"/>
-        <input type="grupa" placeholder="grupa"/>
-        <button type="submit">Create</button>
-        <p class="message">Already registered? <a routerLink="/login">Sign In</a></p>
-      </form>
-    </div>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" (submit)="registerUser($event)">
+      <input type="name" placeholder="name" required />
+      <input type="password" placeholder="password" required />
+      <input type="email" placeholder="email address" required />
+
+      <div class="input-block">
+        <mat-form-field appearance="fill">
+          <select matNativeControl [disabled]="disableSelect.value">
+            <option value="Dev">Dev</option>
+            <option value="Q&A">Q&A</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </mat-form-field>
+      </div>
+      <button type="submit">Create</button>
+    </form>
+    <p class="message">Already registered? <a routerLink="/login">Sign In</a></p>
+
+
+    <p class="message">Already registered? <a routerLink="/login">Sign In</a></p>
   </div>
+
+
+</div>
